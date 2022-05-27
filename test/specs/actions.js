@@ -10,7 +10,7 @@ describe("actions", () => {
     //     await browser.pause(5000)
     // })
 
-    it("keys actions", async () => {
+    it.skip("keys actions", async () => {
         //https://w3c.github.io/webdriver/#keyboard-actions
         await actionsPage.open(config.HEROKU_BASE_URL, "/key_presses");
         await actionsPage.setSearchInput("Tab");
@@ -21,7 +21,7 @@ describe("actions", () => {
         await browser.pause(5000);
     })
 
-    it ("drag and drop actions", async () => {
+    it.skip("drag and drop actions", async () => {
         await actionsPage.open(config.JQUERY_BASE_URL, "/resources/demos/droppable/default.html");
 
         const draggable = await $('#draggable');

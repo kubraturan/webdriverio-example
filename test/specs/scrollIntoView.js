@@ -2,7 +2,7 @@ const config = require("../config");
 const scrollIntoViewPage = require("../pages/scrollIntoView.page")
 
 describe('scrollIntoView check', () => {
-    it('check forgot Password Text', async () => {
+    it.skip('check forgot Password Text', async () => {
         scrollIntoViewPage.open(config.CLASSIC_CRMPRO_BASE_URL, "/");
         const forgotPassword = scrollIntoViewPage.ForgotPassword;
         const checkText = await forgotPassword.isDisplayedInViewport();
@@ -11,7 +11,7 @@ describe('scrollIntoView check', () => {
         await browser.pause(5000);
     })
     
-    it('forgot Password Text', async () => {
+    it.skip('forgot Password Text', async () => {
         scrollIntoViewPage.open(config.CLASSIC_CRMPRO_BASE_URL, "/");
         const forgotPassword = scrollIntoViewPage.ForgotPassword;
 
