@@ -20,4 +20,16 @@ describe("actions", () => {
 
         await browser.pause(5000);
     })
+
+    it ("drag and drop actions", async () => {
+        await actionsPage.open(config.JQUERY_BASE_URL, "/resources/demos/droppable/default.html");
+
+        const draggable = await $('#draggable');
+        const droppable = await $('#droppable');
+        await draggable.dragAndDrop(droppable);
+
+        const text = await $('#droppable p').getText();
+        expect(text).toEqual("Dropped!");
+        await browser.pause(5000);
+    })
 })
