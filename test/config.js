@@ -5,6 +5,7 @@ class Config {
 
     default() {
         this.HEROKU_BASE_URL = "https://the-internet.herokuapp.com";
+        this.PEGASUS_BASE_URL = "https://www.flypgs.com"
     }
 }
 
