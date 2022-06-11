@@ -23,6 +23,21 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
+
+    suites: {
+        login: [
+            './test/specs/login.js',
+            './test/specs/dropdown.js'
+        ],
+        otherFeature: [
+            './test/specs/actions.js',
+            './test/specs/alerts.js'
+        ],
+        waits: [
+            './test/specs/waitForEnabled.js',
+            './test/specs/waitForExist.js'
+        ]
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'

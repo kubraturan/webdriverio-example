@@ -11,6 +11,8 @@
         "wdio-chromedriver-service": "^7.3.2"
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js"
+        "wdio": "wdio run wdio.conf.js",
+        "suite": "wdio wdio.conf.js --suite login --suite otherFeature",
+        "waits": "wdio wdio.conf.js --suite waits"
     }
 }
